@@ -19,7 +19,9 @@
         </div>
 
         <!-- Quiz name -->
-        <h1 class="col-sm-4">Javascript Quiz</h1>
+        <div class="col-sm-4">
+            
+        </div>
 
         <!-- time remainig once test is started -->
         <div class="col-sm-4 timer">
@@ -31,20 +33,28 @@
 
     <section>
 
-        <button class="startBtn">Begin Test</button>
+        <button id="startBtn">Begin Test</button>
         
         <div class="row"> 
             <div class="col-sm-2"></div>
 
-            <div class="col-sm-8" id="container"></div>
+            <div class="col-sm-8" id="quizContainer">
+
+
+            </div>
             
         </div>
 
         
     </section>
 
+    <footer>
+        <div style="display: inline-block" id="progress">
+          <span>5 questions </span>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="java.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

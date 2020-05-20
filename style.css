@@ -11,7 +11,7 @@ h1 {
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    text-align: right;
+    text-align: left;
     padding: 10px;
     font-weight: bolder;
 }
@@ -24,6 +24,22 @@ body {
     background-image: url("./images/whitey_@2X.png");
 }
 
+footer {
+    border-top: 1px solid #e2e3e4;
+    bottom: 0;
+    padding: 8px 32px;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
 .topScoreLink {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -32,7 +48,7 @@ body {
     color: black;
 }
 
-.startBtn {
+#startBtn {
     border-radius: 8px;
     padding: 10px;
     background-color: darkgreen;
@@ -53,6 +69,16 @@ body {
     padding: 20px;
 }
 
+.prog {
+    border: 1px solid #acb3bb;
+    border-radius: 5px;
+    display: inline-block;
+    height: 30px;
+    margin: 0 0 0 8px;
+    vertical-align: middle;
+    width: 30px;
+}
+  
 .hide {
     display: none;
 }
