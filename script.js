@@ -2,8 +2,8 @@
 var timeEl = document.querySelector(".time"),
     secondsLeft = 60,
     userScore = 0,
-    progress = document.getElementById("progress");
-var questions = [
+    progress = document.getElementById("progress"),
+    questions = [
         {
         question: "Inside which HTML element do we put the Javascript?",
         choices: ["<js>", "<script>", "<javascript>", "<scripting>"],
@@ -28,10 +28,10 @@ var questions = [
         question: "How can you add a comment in a JavaScript?",
         choices: ["//This is a comment", "<!--This is a comment-->", "'This is a comment'", "(This is a commet)"],
         answer: "//This is a comment"
-    }];
-var questionCount = 0;
-var correctAnswerCount = 0;
-var incorrectAnswerCount = 0 ;
+    }],
+    questionCount = 0,
+    correctAnswerCount = 0,
+    incorrectAnswerCount = 0 ;
     
 // created a function to initiate both timer and starting the quiz
 $("#startBtn").on("click", function(event) {
@@ -74,8 +74,7 @@ $("#startBtn").on("click", function(event) {
 
         // adding new elements to be used for all possible solutions of the question
         var quesChoice = document.createElement ("ul");
-        console.log("****")
-    console.log(questions[questionCount].choices)
+        console.log(questions[questionCount].choices)
         // loop will be used to craete a button for each possible sulotion
         container.appendChild(h2Tag)
 
@@ -98,10 +97,11 @@ $("#startBtn").on("click", function(event) {
             var correctAnswer;
 
             // will need to add to userScore once answer is determined to be correct
-            if (e.target.matches("button")){
+            if (e.target.matches("choiceBtn")){
                 var userAnswer = e.target.textContent
-                var indexData = e.target.dataset.indexData
+                var indexData = e.target.dataset.index
                 userScore ++;
+                correctAnswer = true;
                 console.log(correctAnswer);
                 console.log(userAnswer);
                 console.log(indexData);
